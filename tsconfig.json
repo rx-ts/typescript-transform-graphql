@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "plugins": [
+      {
+        "transform": "./src/index.ts"
+      }
+    ],
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "target": "es5"
+  },
+  "include": ["**/*.ts", "**/*.gql"],
+  "exclude": ["**/*.test.ts"]
+}

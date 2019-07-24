@@ -1,0 +1,43 @@
+{
+  "name": "typescript-transform-graphql",
+  "version": "0.1.0",
+  "description": "TypeScript transformer for compiling plain `.gql`/`.graphql` through `graphql-tag`.",
+  "repository": "git@github.com:rx-ts/typescript-transform-graphql.git",
+  "author": "JounQin <admin@1stg.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint . --ext .ts --max-warnings 10",
+    "build": "rimraf dist && ttsc -P src",
+    "test": "ts-node --files node_modules/.bin/jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "typescript": ">= 2.2"
+  },
+  "devDependencies": {
+    "@octokit/graphql-schema": "^6.24.0",
+    "@types/graphql": "^14.2.3",
+    "@types/jest": "^24.0.15",
+    "apollo-boost": "^0.4.3",
+    "commitlint": "^8.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-1stg": "^5.4.1",
+    "eslint-plugin-graphql": "^3.0.3",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "prettier-config-1stg": "^0.1.0",
+    "standard-version": "^6.0.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "ttypescript": "^1.5.7",
+    "typescript": "^3.5.3"
+  }
+}

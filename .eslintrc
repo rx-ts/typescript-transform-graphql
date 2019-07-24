@@ -1,0 +1,19 @@
+{
+  "extends": "1stg",
+  "plugins": ["graphql"],
+  "rules": {
+    "graphql/named-operations": [
+      2,
+      {
+        "env": "literal"
+      }
+    ],
+    "graphql/template-strings": [
+      2,
+      {
+        "env": "literal"
+      }
+    ],
+    "import/namespace": 0
+  }
+}
